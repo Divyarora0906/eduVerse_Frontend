@@ -14,7 +14,7 @@ function Register() {
   const CreateAccount = async(ev) => {
     ev.preventDefault();
     const res = await axios.post(
-        "http://localhost:5000/register",
+        "https://edubackend-9xfi.onrender.com/register",
         {
           firstname,
           lastname,
