@@ -1,0 +1,77 @@
+
+.Form_Container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 120vh;
+    align-items: center;
+    position: relative;
+}
+.Form_Container>form{
+    background: linear-gradient(50deg, rgba(34,193,195,1) 4%, rgba(139,190,123,1) 36%, rgba(164,189,106,1) 53%, rgba(253,187,45,1) 100%);
+    display: grid;
+    place-items: center;
+    height: 400px;
+    margin-top: 90px;
+    padding: 20px;
+    border-radius: 0px 20px 20px 0px;
+}
+.Form_Container>img{
+    margin-top: 90px;
+    height: 400px;
+    border-radius: 20px 0px 0px 20px;
+}
+form>h1{
+    font-size: 40px;
+}
+form>input{
+   height: 55px;
+   width: 290px;
+   font-size: 18px;
+   outline: none;
+   color: white;
+   padding: 10px;
+   border: 2px solid #ffffff;
+   border-radius: 5px;
+   background-color: transparent; /* Set to transparent for the input background */
+}
+
+form>input::placeholder {
+    color: white;
+}
+.Form_Container>form>button{
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+@media (max-width:768px) {
+    .Form_Container>img{
+        margin-top: 90px;
+        height: 420px;
+        display: none;
+    }
+    .Form_Container{
+        height: 120vh;;
+    }
+    .Form_Container>form{
+        width: 300px;
+        border-radius: 20px;
+    }
+    form>input{
+        height: 50px;
+        width: 250px;
+       
+    
+        padding: 10px;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        background-color: transparent; /* Set to transparent for the input background */
+     }
+    
+}
