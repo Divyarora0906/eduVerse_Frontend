@@ -14,7 +14,7 @@ function ShowCourses() {
   const fetchData = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/coursesNow",
+        "https://edubackend-9xfi.onrender.com/coursesNow",
         {
           user,
         },
