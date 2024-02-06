@@ -1,0 +1,91 @@
+.Card{
+    height: 440px;
+    width: 320px;
+    position: relative;
+    border-radius: 15px;
+}
+h2.key{
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
+    color: rgb(0, 0, 09);
+}
+.Course_heading{
+    text-align: center;
+    background-color: #fdf9f6;
+}
+.Course_heading>img{
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+.Card .box{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgb(235,220,239);
+ border-radius: 15px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.5s;
+ flex-direction: column;
+}
+.Card .box .num{
+    position: absolute;
+    top: 10px;
+    transition: 0.5s;
+    right: 10px;
+    color: rgba(0,0,0,0.09);
+    font-size: 80px
+}
+.Card .box h2.text {
+    color: #000000;
+    font-size: 20px;
+
+}
+
+.Card .box h2.text{
+    text-align: center;
+}
+.Card-Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #fdf9f6;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.Card>.box>img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 70px auto 0px auto;
+    padding: 5px;
+}
+
+
+@media (max-width:425px){
+    .Card .box{
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgb(235,220,239);
+       border-radius: 15px;
+       display: flex;
+       width: 300px;
+       margin: auto;
+       justify-content: center;
+       align-items: center;
+       transition: 0.5s;
+       flex-direction: column;
+      }
+}
