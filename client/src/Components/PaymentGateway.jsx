@@ -19,7 +19,7 @@ function PaymentGateway() {
     setpay(true);
     ev.preventDefault();
       const res = await axios.post(
-        "http://localhost:5000/update",
+        "https://edubackend-9xfi.onrender.com/update",
         {
           id,
           name,
