@@ -10,14 +10,14 @@ function Navbar() {
  const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("http://localhost:5000/profile", { withCredentials: true })
+      .get("https://edubackend-9xfi.onrender.com/profile", { withCredentials: true })
       .then((res) => {
         setuser(res.data.name);
       });
   }, []);
 
   const handleLogout = async () => {
-    await axios.get("http://localhost:5000/logout", { withCredentials: true });
+    await axios.get("https://edubackend-9xfi.onrender.com/logout", { withCredentials: true });
     setuser(null);
     navigate("/login");
   };
