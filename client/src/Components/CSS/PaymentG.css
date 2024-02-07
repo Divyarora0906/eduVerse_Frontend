@@ -59,3 +59,9 @@
 {
   margin-top: -150px;
 }
+@media (max-width:500px){
+.details{
+  width: 350px;
+  margin-top: 20px;
+}
+}
