@@ -70,7 +70,7 @@ function Register() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <button type="sumbit">
-            Sumbit
+            Submit
         </button>
       </form>
     </div>
